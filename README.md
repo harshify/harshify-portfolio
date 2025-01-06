@@ -2,7 +2,7 @@
 
 Welcome to my portfolio showcase! This project highlights my expertise, projects, and journey as a web developer.
 
-### Check it out live: [Live Portfolio]()
+### Check it out live: [Live Portfolio](https://harshify-portifolio.vercel.app/)
 
 ## Table of Contents
 - [Overview](#overview)
