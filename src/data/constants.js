@@ -9,7 +9,7 @@ export const Bio = {
     "I'm a motivated and versatile individual, passionate about learning and delivering high-quality results. With a positive attitude and a growth mindset, I'm ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/harshify",
     resume:
-      "https://drive.google.com/file/d/1tMSTRv1FQ8IWev_ph7gc_vWESO4v0DsU/view?usp=drive_link",
+      "https://drive.google.com/file/d/1LBgrhZHMYZ1X9JFUq-NdSAdCZtHnwnH4/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/harshify/",
     twitter: "",
     insta: "",
@@ -146,28 +146,26 @@ export const Bio = {
   ];
   
   export const experiences = [
-    /*{
+    {
       id: 0,
-      img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-      role: "DevOps & Fullstack Engineering Intern",
-      company: "Flipr Inovations Pvt. Ltd.",
-      date: "Aug 2023 - July 2023",
-      desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
+      img: "https://i.ibb.co/qW7KsTB/1720762325513.png",
+      role: "Frontend Developer Intern",
+      company: "Bugyal Food Pvt. Ltd.",
+      date: "July 2024 - Oct 2024",
+      desc: "Designed and launched the official website using HTML, CSS, JavaScript, and ReactJS. Enhanced digital marketing with product posts, boosted user engagement, and improved website responsiveness for a better customer experience.",
       skills: [
-        "Docker",
-        "Terraform",
-        "AWS",
-        "EC2",
-        "Portainer",
-        "Nginx",
-        "JavaScript",
-        "TypeScript",
-        "Node Js",
-        " Next Js",
+        "HTML",
+        "SASS",
+        "React Js",
+        "Strapi",
+        "Stripe",
+        "Axios",
+        "Vite",
+        "React Redux",
       ],
       doc: "",
     }, 
-    */
+  
   ];
   
   export const education = [
@@ -202,7 +200,7 @@ export const Bio = {
   
   export const projects = [
     {
-      id: 2,
+      id: 1,
       title: "travelAir",
       date: "Jan 2023 - Mar 2023",
       description:
@@ -213,6 +211,51 @@ export const Bio = {
       category: "web",
       github: "https://github.com/harshify/travelAir",
       webapp: "harshify.github.io/travelAir/",
+      member: [
+        {
+          name: "Harsh Raj Mishra",
+          img: "https://avatars.githubusercontent.com/u/97730548?s=48&v=4",
+          linkedin: "https://www.linkedin.com/in/harshify",
+          github: "https://github.com/harshify",
+        },
+      ],
+    },
+
+
+    {
+      id: 2,
+      title: "WhatsApp Chat Analyzer",
+      date: "Oct 2023 - Nov 2023",
+      description:
+        "An interactive tool using Python and Streamlit to analyze WhatsApp chats. It extracted statistics like total messages, words, media, and links shared. The tool visualized activity patterns with timelines, heatmaps, and word clouds, and identified the most active users and common words for insightful analysis.",       
+      image:
+        "https://i.ibb.co/wsbfNvZ/Whats-App-Chat.jpg",
+      tags: ["Python", "Pandas", "streamlit","Seaborn", "WordCloud", "URLExtract"],
+      category: "ml",
+      github: "https://github.com/harshify/WhatsApp_Chat_Analyzer",
+      webapp: "https://whatsapp-chat-analyzerr.streamlit.app/",
+      member: [
+        {
+          name: "Harsh Raj Mishra",
+          img: "https://avatars.githubusercontent.com/u/97730548?s=48&v=4",
+          linkedin: "https://www.linkedin.com/in/harshify",
+          github: "https://github.com/harshify",
+        },
+      ],
+    },
+
+    {
+      id: 3,
+      title: "Face Trace",
+      date: "July 2024 - Sept 2024",
+      description:
+        "Developed a deep learning-based facial recognition system for attendance tracking. Used K-Nearest Neighbour (KNN) and achieved an accuracy of 77%, significantly improving attendance management efficiency.",       
+      image:
+        "https://i.ibb.co/bP04wqM/Face-Trace.jpg",
+      tags: ["Python", "Pandas", "streamlit","opencv", "pickle", "numpy", "scikit-learn"],
+      category: "ml",
+      github: "https://github.com/harshify/FaceTrace",
+      webapp: "https://github.com/harshify/FaceTrace",
       member: [
         {
           name: "Harsh Raj Mishra",
