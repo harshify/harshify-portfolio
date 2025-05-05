@@ -1,9 +1,9 @@
 import React from 'react'
-import { Nav, NavLink, NavbarContainer, Span, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileNavLogo, MobileLink } from './NavbarStyledComponent'
-import { DiHtml5Connectivity } from 'react-icons/di';
+import { Nav, NavLink, NavbarContainer, NavLogo, NavItems, GitHubButton, ButtonContainer, MobileIcon, MobileMenu, MobileLink } from './NavbarStyledComponent'
 import { FaBars } from 'react-icons/fa';
 import { Bio } from '../../data/constants';
 import { useTheme } from 'styled-components';
+import './Navbar.css';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -12,9 +12,11 @@ const Navbar = () => {
     <Nav>
       <NavbarContainer>
         <NavLogo to='/'>
-          <a style={{ display: "flex", alignItems: "center", color: "whitesmoke" , marginBottom: '20;', cursor: 'pointer' }}>
-            <DiHtml5Connectivity size="3rem" /> <Span>harshify</Span>
-          </a>
+          <div className="logo-container">
+            <span className="logo-text-1">harsh</span>
+            <span className="logo-text-2">ify</span>
+            <span className="logo-dot">.</span>
+          </div>
         </NavLogo>
         <MobileIcon>
           <FaBars onClick={() => {
@@ -22,11 +24,11 @@ const Navbar = () => {
           }} />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#experience'>Experience</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink href="#about" className="nav-link">About</NavLink>
+          <NavLink href='#skills' className="nav-link">Skills</NavLink>
+          <NavLink href='#experience' className="nav-link">Experience</NavLink>
+          <NavLink href='#projects' className="nav-link">Projects</NavLink>
+          <NavLink href='#education' className="nav-link">Education</NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>

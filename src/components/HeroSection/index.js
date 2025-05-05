@@ -1,23 +1,24 @@
 import React from 'react'
 import HeroBgAnimation from '../HeroBgAnimation'
-import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, HeroInnerContainer, TextLoop, Title, Span, SubTitle,SocialMediaIcons,SocialMediaIcon, ResumeButton } from './HeroStyle'
 import HeroImg from '../../images/harsh.png'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
+import { FaWhatsapp } from 'react-icons/fa';
+import './HeroSection.css';
 
 const HeroSection = () => {
     return (
         <div id="about">
-            <HeroContainer>
-                <HeroBg>
+            <div className="hero-container">
+                <div className="hero-bg">
                     <HeroBgAnimation />
-                </HeroBg>
-                <HeroInnerContainer >
-                    <HeroLeftContainer id="Left">
-                        <Title>Hi, I am <br /> {Bio.name}</Title>
-                        <TextLoop>
+                </div>
+                <div className="hero-inner-container">
+                    <div className="hero-left-container">
+                        <h1 className="hero-title">Hi, I am <br /> {Bio.name}</h1>
+                        <div className="text-loop">
                             I am a
-                            <Span>
+                            <span className="highlight-span">
                                 <Typewriter
                                     options={{
                                         strings: Bio.roles,
@@ -25,19 +26,21 @@ const HeroSection = () => {
                                         loop: true,
                                     }}
                                 />
-                            </Span>
-                        </TextLoop>
-                        <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton href={Bio.resume} target='display'>Check Resume</ResumeButton>
-                    </HeroLeftContainer>
+                            </span>
+                        </div>
+                        <div className="subtitle">{Bio.description}</div>
+                        <div className="button-container">
+                            <a className="resume-button" href={Bio.resume} target='display'>Check Resume</a>
+                            <a className="whatsapp-button" href={Bio.whatsapp} target="_blank" rel="noopener noreferrer">
+                                <FaWhatsapp size={20} /> WhatsApp</a>
+                        </div>
+                    </div>
 
-                    <HeroRightContainer id="Right">
-
-                        <Img src={HeroImg} alt="hero-image" />
-                    </HeroRightContainer>
-                </HeroInnerContainer>
-
-            </HeroContainer>
+                    <div className="hero-right-container">
+                        <img className="hero-img" src={HeroImg} alt="hero-image" />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
