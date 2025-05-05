@@ -52,11 +52,6 @@ Contributions are encouraged! If you wish to contribute to My Portfolio, follow 
 4. Push to the branch: `git push origin my-feature`
 5. Open a pull request.
 
-# License
-This project is licensed under the [MIT License](LICENSE).
-
- Your engagement is appreciated!
-
 ---
 
 *Feel free to explore my portfolio and get in touch with me. I'm excited to share my journey and projects with you!*
