@@ -9,7 +9,7 @@ export const Bio = {
     "I'm a motivated and versatile individual, passionate about learning and delivering high-quality results. With a positive attitude and a growth mindset, I'm ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/harshify",
     resume:
-      "https://drive.google.com/file/d/1Ci88JQDOUHu8fVs6oKQzTSbiMMyujy65/view?usp=sharing",
+      "https://drive.google.com/file/d/1w5ezf9c14h6S_ZjWNkxWVyE3p4SO7RQG/view?usp=sharing",
     linkedin: "https://www.linkedin.com/in/harshify/",
     twitter: "",
     insta: "",
